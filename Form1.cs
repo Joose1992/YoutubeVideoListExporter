@@ -34,7 +34,7 @@ namespace YoutubeVideoListExporter
         {
             try
             {
-                YouTubeService yt = new YouTubeService(new BaseClientService.Initializer() { ApiKey = "AIzaSyCZi--sulneTvdmX77wckqszgwzeaHwF9Q" });
+                YouTubeService yt = new YouTubeService(new BaseClientService.Initializer() { ApiKey = "Your google api goes here!" });
                 ChannelsResource.ListRequest channelsListRequest = yt.Channels.List("contentDetails");
                 //channelsListRequest.ForUsername = textBox_url.Text;
                 channelsListRequest.Id = textBox_url.Text;
